@@ -96,3 +96,19 @@ li{
     margin-bottom: 10px;
     border-radius: 5px;
 }
+
+.td-controls {
+    width: 22px;
+    height: 22x;
+    padding: 2px;
+    margin-right: 5px;
+}
+
+.td-controlsOne {
+    width: 22px;
+    height: 22px;
+    font-weight: 700;
+    padding: 2px;
+    margin-left:10px;
+    justify-content: right;
+}

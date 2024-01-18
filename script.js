@@ -11,7 +11,7 @@ tdValue.addEventListener("keypress", function (e)
 });
 
 function createTodoData()
-{
+{ 
     if(tdValue.value === "")
     {
         alert("Please enter a task");
@@ -20,15 +20,13 @@ function createTodoData()
     else
     {
         let li = document.createElement("li");
-        const tdItems = `<div ondlbclick="CompleteTodoItem(this)">${tdValue.value}</div> <div><img class="edit td-controlsOne" src="pencil.png" alt="edit" /><img class="delete td-controls" src="bin.png" alt="delete" /></div>`;
+        const tdItems = `  <div class="checkbox-wrapper-11">
+        <input id="02-11" type="checkbox" name="r" value="2">
+        <label for="02-11">${tdValue.value}</label>
+      </div>`;
 
         li.innerHTML = tdItems;
         listItems.appendChild(li);
         tdValue.value = "";
     }
-}
-
-function CompleteTodoItem(e)
-{
-    console.log(e.parentElement);
 }
